@@ -31,7 +31,7 @@
 
 ## 🎓 Formation
 
-**Metz Numeric School**  
+**Metz Numeric School (2e année)**  
 _Bachelor Développement Informatique (2023 - 2026)_
 
 - Développement Web (PHP, JS, MVC)
