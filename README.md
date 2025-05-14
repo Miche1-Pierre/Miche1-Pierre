@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Étudiant en 2e année de Bachelor Développement Informatique à Metz Numeric School  
+  Étudiant en 2e année de Bachelor Développement Informatique à Metz Numeric School (poursuite sur un Master 2)  
   <br>📍 Metz | Mobile France / EU
   <br>📆 Alternance dès octobre 2025 (1 semaine école / 3 semaines entreprise)
 </p>
