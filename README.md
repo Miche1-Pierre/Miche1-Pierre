@@ -7,14 +7,14 @@
 </p>
 
 <p align="center">
-  Étudiant en 2e année de Bachelor Développement Informatique à Metz Numeric School (poursuite sur un Master 2)  
+  Étudiant en 2e année de Bachelor Développement Informatique à Metz Numeric School
+  <br>(poursuite sur un Master 2)  
   <br>📍 Metz | Mobile France / EU
   <br>📆 Alternance dès octobre 2025 (1 semaine école / 3 semaines entreprise)
 </p>
 
-<p style="display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 20px;">
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Miche1-Pierre&show_icons=true&include_all_commits=true&count_private=true&hide=prs,issues,contribs&hide_title=true&hide_border=true&theme=default" />
-  <br />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Miche1-Pierre&layout=compact&hide=shaderlab,hlsl&theme=default" />
 </p>
 
