@@ -11,6 +11,7 @@
   <br>(poursuite sur un Master 2)  
   <br>📍 Metz | Mobile France / EU
   <br>📆 Alternance dès octobre 2025 (1 semaine école / 3 semaines entreprise)
+  
 </p>
 
 <p align="center">
