@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Miche1-Pierre&show_icons=true&include_all_commits=false&count_private=true&hide=prs,issues,contribs&hide_border=true&hide_title=true&theme=default" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Miche1-Pierre&show_icons=true&include_all_commits=true&count_private=true&hide=prs,issues,contribs&hide_border=true&hide_title=true&theme=default" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Miche1-Pierre&layout=compact&hide=shaderlab,hlsl&theme=default" />
 </p>
 
