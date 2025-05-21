@@ -40,6 +40,13 @@ _Bachelor Développement Informatique (2023 - 2026)_
 - Systèmes & Réseaux (Linux, hébergement, déploiement)
 - Sécurité, modélisation de SI, ...
 
+**Lycée Louis Majorelle, Toul**
+_Baccalauréat Général (obtenu en 2023)_
+
+- Numérique et Science Informatique (Spé 1)
+- Mathématique (Spé 2)
+- Science de l'ingénieur (Spé 3)
+
 <br />
 
 ## 🚀 Projets _(pertinents)_
