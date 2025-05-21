@@ -47,7 +47,7 @@ _Baccalauréat Général (obtenu en 2023)_
 
 - Numérique et Science Informatiques (Spé 1)
 - Mathématiques (Spé 2)
-- Sciences de l'ingénieur (Spé 3)
+- Sciences de l'Ingénieur (Spé 3)
 
 <br />
 
