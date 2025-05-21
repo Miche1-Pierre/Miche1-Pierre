@@ -45,9 +45,9 @@ _Bachelor Développement Informatique (2023 - 2026)_
 **Lycée Louis Majorelle, Toul**  
 _Baccalauréat Général (obtenu en 2023)_
 
-- Numérique et Science Informatique (Spé 1)
-- Mathématique (Spé 2)
-- Science de l'ingénieur (Spé 3)
+- Numérique et Science Informatiques (Spé 1)
+- Mathématiques (Spé 2)
+- Sciences de l'ingénieur (Spé 3)
 
 <br />
 
