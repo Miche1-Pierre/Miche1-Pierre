@@ -10,7 +10,7 @@ French software engineer, currently building in **Montréal** — and I like mak
 
 One rule above the rest: **understand the business before you design the architecture.** It's what stops a system from being rebuilt six months later — and what turns engineering into something the business can *measure*.
 
-Right now: **Head of Engineering** on Plania and lead technical / full-stack developer at **TechGuys** — shipping AI-driven products that serve real processes, not demos.
+Right now: **Head of Engineering & lead full-stack** — shipping AI-driven products that serve real processes, not demos, and building **Taskforce** & **Brain OS**.
 
 ---
 
@@ -24,15 +24,51 @@ Right now: **Head of Engineering** on Plania and lead technical / full-stack dev
 
 ---
 
+## 🛠️ Stack
+
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Keycloak](https://img.shields.io/badge/Keycloak-4D4D4D?style=flat-square&logo=keycloak&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+
+</div>
+
+| Layer | Tooling |
+|---|---|
+| **Backend** | Java 21 · Spring Boot *(Clean Architecture, multi-tenant)* · PostgreSQL · REST APIs · Python · Node.js |
+| **Frontend** | TypeScript · Next.js / React · React Native · TailwindCSS |
+| **Applied AI** | LLMs · RAG · AI agents · MCP servers · multi-agent orchestration · embeddings · ML/DL foundations |
+| **Security & Compliance** | OAuth2 / OIDC (Keycloak) · RBAC · OWASP ZAP · 21 CFR Part 11 · GAMP 5 · GDPR |
+| **DevOps & Quality** | Docker · GitHub Actions · GHCR · Nginx · Git (GitFlow) · JUnit 5 · Jest · Playwright · SonarQube |
+
+---
+
 ## 🧩 Taskforce
 > *Describe the outcome — Taskforce orchestrates the execution.*
 
-**The problem it solves:** teams lose hours stitching work across the tools they already use.
+**The problem:** teams lose hours stitching work across the tools they already use — the *coordination*, not the work itself, is the real cost.
 
-**The product:** an execution layer that sits on top of those tools. You describe *what* needs to happen; an agentic core works out the *how* and coordinates it — backed by Brain OS for memory. Strict multi-tenancy and a **self-hosted LLM**, so no customer data ever leaves the box.
+**The product:** an execution layer that sits on top of those tools. You describe *what* needs to happen; an **agentic core** works out the *how*, coordinates it across the team's tools, and remembers context through Brain OS. Multi-tenant from day one, with a **self-hosted LLM** so no customer data ever leaves the box.
+
+**What I'm proud of:**
+- **Strict multi-tenancy** enforced at every layer — isolation is a guarantee, not a convention.
+- An **agentic core** that plans and executes across real tools — not a chatbot bolted on the side.
+- A **self-hosted LLM** (Ollama · Qwen) — privacy by architecture, zero data exfiltration.
+- **9 containerized services**, CI/CD, security-reviewed end to end.
 
 <details>
-<summary><b>🔧 Under the hood — a multi-tenant platform of 9 containerized services</b></summary>
+<summary><b>🔧 Architecture — a multi-tenant platform of 9 containerized services</b></summary>
 
 <br/>
 
@@ -48,7 +84,15 @@ flowchart LR
     BOS --> KG[("Knowledge graph<br/>+ vector search")]
 ```
 
-Strict multi-tenancy from day one, an agentic core that coordinates work across a team's tools, and a self-hosted LLM (Ollama · Qwen) — no customer data leaves the box.
+| Layer | Tech |
+|---|---|
+| Web | Next.js · TypeScript |
+| API | Spring Boot · multi-tenant · REST / JWT |
+| Auth | Keycloak · OIDC · RBAC |
+| Data | PostgreSQL |
+| AI | self-hosted Ollama · Qwen · multi-agent orchestration |
+| Memory | Brain OS · knowledge graph + vector search |
+
 </details>
 
 📖 Full architecture, ADRs, API &amp; security docs → **[@taskforce-project](https://github.com/taskforce-project)**
@@ -93,8 +137,7 @@ timeline
     2024 : Software Engineering Intern — LORIA (CNRS · Inria)
     2025 : Full-Stack — SYNAPSIA
          : Full-Stack — Nancyclotep (pharmaceutical LIMS · 21 CFR Part 11)
-    2026 : Lead Technical &amp; Full-Stack — TechGuys
-         : Head of Engineering — Plania
+    2026 : Head of Engineering &amp; Lead Full-Stack (Montréal)
          : Building Taskforce &amp; Brain OS
 ```
 
