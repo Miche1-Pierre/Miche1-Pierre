@@ -29,28 +29,37 @@ Right now: **Head of Engineering & lead full-stack** — shipping AI-driven prod
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Keycloak](https://img.shields.io/badge/Keycloak-4D4D4D?style=flat-square&logo=keycloak&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Keycloak](https://img.shields.io/badge/Keycloak-4D4D4D?style=flat-square&logo=keycloak&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 </div>
 
-| Layer | Tooling |
+| Area | Tooling |
 |---|---|
-| **Backend** | Java 21 · Spring Boot *(Clean Architecture, multi-tenant)* · PostgreSQL · REST APIs · Python · Node.js |
-| **Frontend** | TypeScript · Next.js / React · React Native · TailwindCSS |
-| **Applied AI** | LLMs · RAG · AI agents · MCP servers · multi-agent orchestration · embeddings · ML/DL foundations |
-| **Security & Compliance** | OAuth2 / OIDC (Keycloak) · RBAC · OWASP ZAP · 21 CFR Part 11 · GAMP 5 · GDPR |
-| **DevOps & Quality** | Docker · GitHub Actions · GHCR · Nginx · Git (GitFlow) · JUnit 5 · Jest · Playwright · SonarQube |
+| **Languages** | Java 21 · TypeScript · JavaScript · Python · SQL |
+| **Backend** | Spring Boot *(Clean Architecture, multi-tenant)* · Node.js · REST APIs |
+| **Frontend** | Next.js · React · React Native · TailwindCSS |
+| **Databases** | PostgreSQL *(relational)* · MongoDB *(NoSQL)* |
+| **Applied AI** | LLMs · RAG · AI agents · MCP servers · multi-agent orchestration · embeddings · self-hosted **Ollama** (Qwen) · ML/DL foundations |
+| **Auth & Identity** | OAuth2 / OIDC · Keycloak · Clerk · RBAC |
+| **DevOps & Infra** | Docker · Kubernetes · Jenkins · GitHub Actions · GHCR · Vercel · Nginx · Linux · VMs · Git (GitFlow) |
+| **Quality & Observability** | JUnit 5 · Jest · Playwright · SonarQube · PostHog · OWASP ZAP |
+| **Security & Compliance** | 21 CFR Part 11 · GAMP 5 · RGPD / GDPR · **Loi 25** · **FINTRAC** |
 
 ---
 
@@ -92,6 +101,7 @@ flowchart LR
 | Data | PostgreSQL |
 | AI | self-hosted Ollama · Qwen · multi-agent orchestration |
 | Memory | Brain OS · knowledge graph + vector search |
+| Infra | Docker · Kubernetes · CI/CD |
 
 </details>
 
