@@ -20,7 +20,7 @@ Right now: **Head of Engineering & lead full-stack** — shipping AI-driven prod
 |---|---|
 | 🎯 **Outcome first** | Automation that removes real cost, AI that serves an existing process, products that move a metric — not features for their own sake. |
 | 🏗️ **Architecture that holds** | The business decides what has to be solid; my job is making sure it is — multi-tenant, secure, maintainable from day one. |
-| 🤖 **AI where it earns its place** | Agentic systems and self-hosted LLMs when they solve the problem, plain code when they don't. |
+| 🤖 **AI where it earns its place** | Agentic systems and model-agnostic LLMs when they solve the problem, plain code when they don't. |
 
 ---
 
@@ -53,89 +53,78 @@ Right now: **Head of Engineering & lead full-stack** — shipping AI-driven prod
 |---|---|
 | **Languages** | Java 21 · TypeScript · JavaScript · Python · SQL |
 | **Backend** | Spring Boot *(Clean Architecture, multi-tenant)* · Node.js · REST APIs |
-| **Frontend** | Next.js · React · React Native · TailwindCSS |
-| **Databases** | PostgreSQL *(relational)* · MongoDB *(NoSQL)* |
-| **Applied AI** | LLMs · RAG · AI agents · MCP servers · multi-agent orchestration · embeddings · self-hosted **Ollama** (Qwen) · ML/DL foundations |
+| **Frontend** | Next.js · React · React Native · TailwindCSS · Astro |
+| **Databases** | PostgreSQL *(relational · pgvector / HNSW)* · MongoDB *(NoSQL)* |
+| **Applied AI** | LLMs (Groq · Ollama) · RAG · AI agents · MCP servers · multi-agent orchestration · embeddings · ML/DL foundations |
 | **Auth & Identity** | OAuth2 / OIDC · Keycloak · Clerk · RBAC |
-| **DevOps & Infra** | Docker · Kubernetes · Jenkins · GitHub Actions · GHCR · Vercel · Nginx · Linux · VMs · Git (GitFlow) |
+| **DevOps & Infra** | Docker · Kubernetes · Jenkins · GitHub Actions · GHCR · Vercel · Nginx · MinIO · RabbitMQ · Linux · VMs · Git (GitFlow) |
 | **Quality & Observability** | JUnit 5 · Jest · Playwright · SonarQube · PostHog · OWASP ZAP |
 | **Security & Compliance** | 21 CFR Part 11 · GAMP 5 · RGPD / GDPR · **Loi 25** · **FINTRAC** |
 
 ---
 
 ## 🧩 Taskforce
-> *Describe the outcome — Taskforce orchestrates the execution.*
+> *The IDE executes. Taskforce orchestrates.*
 
-**The problem:** teams lose hours stitching work across the tools they already use — the *coordination*, not the work itself, is the real cost.
+**Today** — a multi-tenant work & project platform in the Linear / Plane family: workspaces, projects, issues, cycles, analytics, a wiki, chat, integrations, and an AI assistant.
 
-**The product:** an execution layer that sits on top of those tools. You describe *what* needs to happen; an **agentic core** works out the *how*, coordinates it across the team's tools, and remembers context through Brain OS. Multi-tenant from day one, with a **self-hosted LLM** so no customer data ever leaves the box.
+**Where it's heading** — an **AI Delivery OS.** Instead of piloting an agent *inside* an IDE, Taskforce pilots the *whole* delivery pipeline — Idea → Product Spec → Architecture → Database → API → Implementation → Tests → Deploy — each stage a **validated checkpoint** you can't skip. You launch a *Run* (think GitHub Actions); coding agents (Claude Code, Cursor…) execute; Taskforce collects the logs, diffs, commits and tests, and gates each step. Every validated step **writes itself into Brain OS** — the documentation is generated *while* the product is built.
 
-**What I'm proud of:**
-- **Strict multi-tenancy** enforced at every layer — isolation is a guarantee, not a convention.
-- An **agentic core** that plans and executes across real tools — not a chatbot bolted on the side.
-- A **self-hosted LLM** (Ollama · Qwen) — privacy by architecture, zero data exfiltration.
-- **9 containerized services**, CI/CD, security-reviewed end to end.
+The bet: the best agent becomes a commodity as models improve. What nobody standardizes is **how an AI should deliver a project** — and that engine is model-agnostic (Claude, GPT, Gemini, all swappable underneath).
 
 <details>
-<summary><b>🔧 Architecture — a multi-tenant platform of 9 containerized services</b></summary>
+<summary><b>🔧 Architecture — a multi-tenant platform of containerized services</b></summary>
 
 <br/>
 
 ```mermaid
 %%{init: {'theme':'dark'}}%%
 flowchart LR
-    U([User]) --> FE["Next.js<br/>web app"]
-    FE -->|"REST · JWT"| BE["Spring Boot<br/>backend · multi-tenant"]
-    BE --> DB[("PostgreSQL")]
-    BE -->|OIDC| KC["Keycloak<br/>auth"]
-    BE <-->|"agents · tools"| AI["AI service<br/>self-hosted Ollama · Qwen"]
-    AI <--> BOS["Brain OS<br/>memory"]
-    BOS --> KG[("Knowledge graph<br/>+ vector search")]
+    U([User]) --> FE["Next.js 16<br/>web app"]
+    FE -->|"REST · JWT"| BE["Spring Boot 4<br/>multi-tenant API"]
+    BE --> DB[("PostgreSQL 18<br/>+ pgvector · HNSW")]
+    BE -->|OIDC| KC["Keycloak"]
+    BE --> MQ["RabbitMQ"]
+    BE --> OBJ["MinIO"]
+    BE <-->|"agents · tools"| AI["AI orchestration<br/>Groq · model-agnostic"]
+    AI <--> BOS["Brain OS<br/>knowledge graph"]
 ```
 
 | Layer | Tech |
 |---|---|
-| Web | Next.js · TypeScript |
-| API | Spring Boot · multi-tenant · REST / JWT |
+| Web / Landing | Next.js 16 · React 19 · TypeScript · Astro 5 |
+| API | Spring Boot 4 · Java 21 · multi-tenant · REST / JWT |
 | Auth | Keycloak · OIDC · RBAC |
-| Data | PostgreSQL |
-| AI | self-hosted Ollama · Qwen · multi-agent orchestration |
+| Data | PostgreSQL 18 · pgvector (HNSW) |
+| Files / Queue | MinIO · RabbitMQ |
+| AI | Groq (model-agnostic) · agent orchestration |
 | Memory | Brain OS · knowledge graph + vector search |
-| Infra | Docker · Kubernetes · CI/CD |
 
 </details>
 
-📖 Full architecture, ADRs, API &amp; security docs → **[@taskforce-project](https://github.com/taskforce-project)**
+📖 Full docs, ADRs, API &amp; the R&amp;D lab → **[@taskforce-project](https://github.com/taskforce-project)**
 
 ---
 
-## 🧠 Brain OS
-> *Persistent memory for LLM agents.*
+## 🧠 Brain OS — the research beneath the product
+> *A world model of a software project.*
 
-**Why it matters for the product:** most "AI memory" is just a bigger prompt — costly and forgetful. Brain OS is a structured store of **state, context, and the consequences of actions**, so an agent reasons over what actually happened. The payoff: AI that stays reliable as usage grows.
+Brain OS is Taskforce's memory: the project's state as a **living knowledge graph** (PostgreSQL · pgvector · HNSW), readable in one pass by a human *or* an agent, and written to describe the **reality of the code** — not the intentions.
 
-<details>
-<summary><b>🔧 How it's built</b></summary>
+Underneath sits a genuine **R&D lab** — an honest attempt to formalize how a project *evolves*, under constraints that break the usual ML playbook:
 
-<br/>
+- **State is the graph** — `S = G(V, E)`, nodes carrying *measurable* attributes, not decoration.
+- **You never see the true state, only an estimate** — a POMDP framing; the graph knows it doesn't know everything.
+- **A node is its state *and* its rhythm** (`ẋ`) — two cycles at 70%, one accelerating and one stalling, are not the same state.
+- **Every axiom carries a falsifiable test** — an SQL query any dev can run to confirm or refute it. *No test → not an axiom, just a belief.*
 
-```mermaid
-%%{init: {'theme':'dark'}}%%
-flowchart LR
-    AG["LLM agent"] -->|"read / write"| BOS["Brain OS"]
-    DEV(["Developer"]) -->|query| BOS
-    BOS --> KG[("Knowledge graph")]
-    BOS --> VEC[("Vector search")]
-```
-
-R&amp;D on the **architecture, not the model** — the hard part of an AI system is rarely the model call. It's the context you give it, and what you do with its answer.
-</details>
+The hard part is the setting: **one workspace (N ≈ 1), a non-replayable world, ~20 data points a year, near-zero compute.** That rules out learned world models (JEPA, MuZero, Dreamer) and forces a non-gradient, case-based approach. The question stops being *"which model"* and becomes **what you can honestly claim to know** about where a project is heading.
 
 ---
 
 ## 🧬 Where I'm heading
 
-I want to point all of this — the engineering, the applied AI — toward something whose stakes run deeper than performance: **health and the life sciences.** My next step is **bioinformatics** — bringing AI and solid software engineering to biological and clinical data, where the reliability of the code can matter to the people who depend on it.
+I want to point all of this — the engineering, the applied AI, the formal thinking — toward something whose stakes run deeper than performance: **health and the life sciences.** My next step is **bioinformatics** — bringing AI and solid software engineering to biological and clinical data, where the reliability of the code can matter to the people who depend on it.
 
 ---
 
