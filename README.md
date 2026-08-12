@@ -6,11 +6,11 @@
 
 ## Hey, I'm Pierre 👋
 
-**I start from the business, not the stack.** Give me an outcome a team actually needs, and I take it from framing to production — deciding what to build, what to automate, and where technical depth truly pays off.
+French software engineer, currently building in **Montréal** — and I like making things that actually get *used*. I care less about the framework than about what it's for, so **I start from the business, not the stack.** Give me an outcome a team actually needs, and I take it from framing to production: deciding what to build, what to automate, and where technical depth truly pays off.
 
 One rule above the rest: **understand the business before you design the architecture.** It's what stops a system from being rebuilt six months later — and what turns engineering into something the business can *measure*.
 
-Right now: **Head of Engineering** on Plania and lead technical / full-stack developer at **TechGuys** (Montréal) — shipping AI-driven products that serve real processes, not demos.
+Right now: **Head of Engineering** on Plania and lead technical / full-stack developer at **TechGuys** — shipping AI-driven products that serve real processes, not demos.
 
 ---
 
@@ -79,6 +79,12 @@ R&amp;D on the **architecture, not the model** — the hard part of an AI system
 
 ---
 
+## 🧬 Where I'm heading
+
+I want to point all of this — the engineering, the applied AI — toward something whose stakes run deeper than performance: **health and the life sciences.** My next step is **bioinformatics** — bringing AI and solid software engineering to biological and clinical data, where the reliability of the code can matter to the people who depend on it.
+
+---
+
 ## 🧭 How I got here
 
 ```mermaid
@@ -92,7 +98,7 @@ timeline
          : Building Taskforce &amp; Brain OS
 ```
 
-🎓 **Bachelor, Full-Stack Development** — Metz Numeric School (RNCP Level 6)
+🎓 **Bachelor, Full-Stack Development** — Metz Numeric School (RNCP Level 6) · heading toward a **Master in bioinformatics**
 
 ---
 
