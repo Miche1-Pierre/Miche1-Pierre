@@ -17,6 +17,8 @@
   <a href="mailto:pierre.michel.work@gmail.com"><b>Email</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/taskforce-project/taskforce-fullstack"><b>TaskForce</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/Miche1-Pierre/career-os"><b>Career OS</b></a>
 </p>
 
 <br />
@@ -31,7 +33,8 @@ One rule above the rest: understand the business before you design the architect
 being rebuilt six months later, and what turns engineering into something a business can measure.
 
 Between 2024 and 2026 I worked with eight organizations, as an employee or for clients: startups, a 13,000-user
-SaaS, a research lab and a regulated pharmaceutical environment. Alongside, I build TaskForce, in the open.
+SaaS, a research lab and a regulated pharmaceutical environment. Alongside, I ship my own products in the open:
+TaskForce and Career OS, two free desktop apps, both published on the Microsoft Store.
 
 ## How I work
 
@@ -80,7 +83,19 @@ the plan, the project's memory and the agents in one app, on your own computer, 
 
 **From a degree project to an open source product.** TaskForce started in 2025 as a multi-tenant web platform, the
 final project of my level 6 RNCP degree. In October 2026 I rebuilt it as a desktop app for Windows and Linux and opened
-the whole code under the AGPL-3.0 license.
+the whole code under the AGPL-3.0 license. It is now on the [Microsoft Store](https://apps.microsoft.com/detail/9PFC2ML6X5SF).
+
+**The last month.** 137 pull requests merged, and the desktop app went from version 1.3 to 1.14:
+
+- **Cortex, the assistant in every screen.** One bar at the bottom of the app: it creates projects and issues, sees
+  what you are looking at, asks before any action your rules require, and what it creates can be undone.
+- **Missions you can review.** The agent's changes under your eyes, a file put back in one click, comments that go
+  back to the agent, and a complete, signed record of each mission that outlives its issue.
+- **Any model, measured.** A model gateway for Ollama, Anthropic's API and any OpenAI-compatible service, a benchmark
+  of what each model can be trusted with, and context sized to each model.
+- **Connected to the company's tools.** A catalog of connections, the company's files read live (Google Drive,
+  OneDrive, SharePoint, Teams), the company's rules in layers, and project workflows modeled as a subset of BPMN 2.0.
+- **Voice in the composer**, transcribed on the machine.
 
 **Under the hood.** An Electron shell runs a complete local stack: a Spring Boot 4 API on Java 21, PostgreSQL 18 with
 pgvector, a Next.js 16 interface, a local proxy on 127.0.0.1 behind a launch token, browser sign-in with PKCE, and a
@@ -88,9 +103,52 @@ runner that drives Claude Code. More than 1,800 backend tests and 1,100 frontend
 and Trivy on every pull request.
 
 <p align="center">
+  <a href="https://apps.microsoft.com/detail/9PFC2ML6X5SF"><img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get TaskForce from the Microsoft Store" height="44" /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/taskforce-project/taskforce-fullstack"><img src="https://img.shields.io/badge/Star%20TaskForce-191715?style=for-the-badge&logo=github&logoColor=white" alt="Star TaskForce on GitHub" /></a>
   <a href="https://taskforce-project.fr/download"><img src="https://img.shields.io/badge/Download%20for%20Windows%20and%20Linux-2f6bf6?style=for-the-badge" alt="Download TaskForce" /></a>
   <a href="https://docs.taskforce-project.fr"><img src="https://img.shields.io/badge/Documentation-191715?style=for-the-badge" alt="TaskForce documentation" /></a>
+</p>
+
+## Career OS
+
+<p align="center"><b>Your whole job search in one place, on your own computer.</b></p>
+
+<p align="center">
+  <a href="https://get-career-os.vercel.app">
+    <img src="./assets/career-os.webp" alt="Career OS: the Today page with what needs attention, in front of the applications board" width="640" />
+  </a>
+</p>
+
+A job search scatters across job boards, inboxes, spreadsheets and a Downloads folder full of CV versions. Career OS
+is the free, open source desktop app I built to pull it together, from the first application to settling in a new
+city. I use it every day for my own search.
+
+- **Applications that keep themselves up to date.** Jobs, internships, VIE, master's programs and PhDs, each with
+  its own stages, follow-up dates computed for you and a Today page that says what to chase, prepare or send.
+- **Everything in order.** A CV editor with several versions exported to PDF, a library for letters, diplomas and
+  contracts, contacts, interviews and one calendar for all of it.
+- **Moving for the job.** Housing listings compared on rent, charges, lease, commute and what is left each month, on a
+  map around the workplace, plus the paperwork for each country with official links.
+- **An assistant that never invents.** Optional, through Claude: paste an offer or an email and it fills the record,
+  showing where each field came from, and leaving blank what the source does not say. It drafts,
+  searches and analyzes; it never sends or decides.
+
+**Under the hood.** Next.js 16 and React 19 on one business layer shared by the interface, a REST API and an MCP
+server, so Claude Code can drive the app as well as a person. PostgreSQL through Drizzle in Docker, or an embedded
+PGlite database for the desktop build. The Microsoft Store edition is an MSIX package with its own Node.js runtime, a
+launcher without a console window and the database kept out of OneDrive. Built in seven weeks: more than 160
+commits, 74 merged pull requests, 227 tests, MIT license.
+
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9NCQ7PFQVM2Q"><img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get Career OS from the Microsoft Store" height="44" /></a>
+</p>
+
+<p align="center">
+  <a href="https://get-career-os.vercel.app"><img src="https://img.shields.io/badge/Website-2f6bf6?style=for-the-badge" alt="Career OS website" /></a>
+  <a href="https://github.com/Miche1-Pierre/career-os"><img src="https://img.shields.io/badge/Star%20Career%20OS-191715?style=for-the-badge&logo=github&logoColor=white" alt="Star Career OS on GitHub" /></a>
 </p>
 
 ## Selected work
@@ -160,7 +218,7 @@ public in the [Brain OS vault](https://github.com/taskforce-project/taskforce-do
 | **Languages** | Java 21, TypeScript, JavaScript, Python, SQL |
 | **Backend** | Spring Boot (Clean Architecture, multi-tenant), Node.js, REST APIs |
 | **Frontend** | Next.js, React, React Native, Tailwind CSS, Astro |
-| **Desktop** | Electron, with an embedded API, database and interface |
+| **Desktop** | Electron, with an embedded API, database and interface; apps published on the Microsoft Store |
 | **Databases** | PostgreSQL (relational, pgvector and HNSW), MongoDB |
 | **Applied AI** | LLMs (Ollama, Groq, OpenAI-compatible APIs), RAG, AI agents, MCP servers, multi-agent orchestration, embeddings, ML and DL foundations |
 | **Auth and identity** | OAuth2 and OIDC, Keycloak, passkeys, RBAC |
