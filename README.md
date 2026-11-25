@@ -6,7 +6,8 @@
 
 <p align="center">
   <b>Full-stack software engineer moving into applied AI.</b> Architecture, LLM agents and product design, from scoping to production.<br />
-  Based in France. AI intern at BlackFin in Brussels from January to July 2027, then open to remote work and relocation.
+  Based in France. Next: AI intern at <a href="https://blackfin.com">BlackFin</a> in Brussels, January to July 2027.<br />
+  Still open to talk about new opportunities, remote or with relocation.
 </p>
 
 <p align="center">
@@ -186,7 +187,7 @@ public in the [Brain OS vault](https://github.com/taskforce-project/taskforce-do
 
 | Organization | Role | Field | |
 | --- | --- | --- | --- |
-| BlackFin, Brussels (January to July 2027) | AI intern | AI, Transformation team | Employer |
+| [BlackFin](https://blackfin.com), Brussels (January to July 2027) | AI intern | AI, Transformation team | Employer |
 | TechGuys | Tech Lead | Consulting, AI | Employer |
 | Plania | Head of Engineering | SaaS, AI | Employer |
 | Safex Transport | Tech Lead | Freight logistics | Client |
@@ -239,7 +240,7 @@ public in the [Brain OS vault](https://github.com/taskforce-project/taskforce-do
 
 <p align="center">
   <a href="mailto:pierre.michel.work@gmail.com">
-    <img src="./assets/contact.jpg" alt="Let's build what comes next. Available from July 2027, remote or relocation. pierre.michel.work@gmail.com" width="100%" />
+    <img src="./assets/contact.jpg" alt="Let's build what comes next. Open to new opportunities, remote or relocation. pierre.michel.work@gmail.com" width="100%" />
   </a>
 </p>
 
