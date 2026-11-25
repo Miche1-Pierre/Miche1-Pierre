@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Full-stack software engineer moving into applied AI.</b> Architecture, LLM agents and product design, from scoping to production.<br />
-  Based in France, open to remote work and relocation, available from October 2026.
+  Based in France. AI intern at BlackFin in Brussels from January to July 2027, then open to remote work and relocation.
 </p>
 
 <p align="center">
@@ -107,6 +107,7 @@ and Trivy on every pull request.
 </p>
 
 <p align="center">
+  <a href="https://taskforce-project.fr"><img src="https://img.shields.io/badge/Website-2f6bf6?style=for-the-badge" alt="TaskForce website" /></a>
   <a href="https://github.com/taskforce-project/taskforce-fullstack"><img src="https://img.shields.io/badge/Star%20TaskForce-191715?style=for-the-badge&logo=github&logoColor=white" alt="Star TaskForce on GitHub" /></a>
   <a href="https://taskforce-project.fr/download"><img src="https://img.shields.io/badge/Download%20for%20Windows%20and%20Linux-2f6bf6?style=for-the-badge" alt="Download TaskForce" /></a>
   <a href="https://docs.taskforce-project.fr"><img src="https://img.shields.io/badge/Documentation-191715?style=for-the-badge" alt="TaskForce documentation" /></a>
@@ -185,6 +186,7 @@ public in the [Brain OS vault](https://github.com/taskforce-project/taskforce-do
 
 | Organization | Role | Field | |
 | --- | --- | --- | --- |
+| BlackFin, Brussels (January to July 2027) | AI intern | AI, Transformation team | Employer |
 | TechGuys | Tech Lead | Consulting, AI | Employer |
 | Plania | Head of Engineering | SaaS, AI | Employer |
 | Safex Transport | Tech Lead | Freight logistics | Client |
@@ -237,7 +239,7 @@ public in the [Brain OS vault](https://github.com/taskforce-project/taskforce-do
 
 <p align="center">
   <a href="mailto:pierre.michel.work@gmail.com">
-    <img src="./assets/contact.jpg" alt="Let's build what comes next. Available from October 2026, remote or relocation. pierre.michel.work@gmail.com" width="100%" />
+    <img src="./assets/contact.jpg" alt="Let's build what comes next. Available from July 2027, remote or relocation. pierre.michel.work@gmail.com" width="100%" />
   </a>
 </p>
 
